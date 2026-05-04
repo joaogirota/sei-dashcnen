@@ -9,10 +9,21 @@
     h1 { color: #1a2e4a; border-bottom: 2px solid #e85d26; padding-bottom: 10px; }
     h2 { color: #1a2e4a; margin-top: 32px; }
     a { color: #e85d26; }
+    hr.divider { border: none; border-top: 3px solid #e85d26; margin: 60px 0; }
     footer { margin-top: 48px; font-size: 0.85em; color: #888; border-top: 1px solid #eee; padding-top: 16px; }
+    nav { margin-bottom: 32px; }
+    nav a { margin-right: 16px; font-weight: bold; }
   </style>
 </head>
 <body>
+
+<nav>
+  <a href="#pt">Português</a>
+  <a href="#en">English</a>
+</nav>
+
+<!-- ===================== PORTUGUÊS ===================== -->
+<section id="pt">
 
 <h1>Política de Privacidade — SEI+DashCNEN</h1>
 <p><strong>Última atualização:</strong> 04 de maio de 2026</p>
@@ -67,10 +78,74 @@
 </ul>
 
 <h2>7. Contato</h2>
-<p>Dúvidas sobre esta política podem ser enviadas para: <a href="mailto:j.girota@belo.re">j.girota@belo.re</a></p>
+<p>Dúvidas sobre esta política podem ser enviadas para: <a href="mailto:joaogirota@gmail.com">joaogirota@gmail.com</a></p>
+
+</section>
+
+<hr class="divider">
+
+<!-- ===================== ENGLISH ===================== -->
+<section id="en">
+
+<h1>Privacy Policy — SEI+DashCNEN</h1>
+<p><strong>Last updated:</strong> May 4, 2026</p>
+
+<h2>1. What this extension does</h2>
+<p>
+  SEI+DashCNEN is a Chrome browser extension that adds a dashboard for tracking deadlines, statistics, and team information to the Electronic Information System (SEI) used by the Brazilian National Nuclear Energy Commission (CNEN).
+</p>
+
+<h2>2. Data collected and stored locally</h2>
+<p>The extension stores the following data <strong>exclusively in your browser</strong> (via <code>chrome.storage.local</code>) and does not transmit it to external servers:</p>
+<ul>
+  <li>Base URL of your institution's SEI system</li>
+  <li>Dashboard configuration preferences (period, filters, theme)</li>
+  <li>Cached process and statistics data for display in the panel</li>
+  <li>Notification state and unread process count</li>
+</ul>
+
+<h2>3. Access to SEI pages</h2>
+<p>
+  The extension injects scripts into SEI pages to read process, deadline, and team information directly from the system interface. This data is used solely to display information in the extension panel and is never sent to third parties.
+</p>
+
+<h2>4. AI analysis feature (optional)</h2>
+<p>
+  If the AI analysis feature is configured and enabled by the user, the extension may send the content of SEI process documents to an external analysis server (configured by the user or institution). This feature:
+</p>
+<ul>
+  <li>Is <strong>disabled by default</strong> and requires explicit configuration</li>
+  <li>Sends only the content of documents selected for analysis</li>
+  <li>The server address is defined by the user/institution</li>
+</ul>
+<p>The user is responsible for reviewing the privacy policy of the configured analysis server.</p>
+
+<h2>5. Data not collected</h2>
+<p>This extension <strong>does not collect, transmit, or share</strong>:</p>
+<ul>
+  <li>Personal identification data (name, national ID, email)</li>
+  <li>Access credentials (SEI username or password)</li>
+  <li>Browsing history</li>
+  <li>Telemetry or extension usage data</li>
+</ul>
+
+<h2>6. Permissions used</h2>
+<ul>
+  <li><strong>storage:</strong> Store preferences and cache locally in the browser</li>
+  <li><strong>notifications:</strong> Display alerts for new processes in the unit</li>
+  <li><strong>alarms:</strong> Schedule periodic background checks</li>
+  <li><strong>tabs:</strong> Open the panel and create temporary background tabs to fetch SEI data</li>
+  <li><strong>scripting:</strong> Re-inject communication scripts after extension updates</li>
+  <li><strong>Host *.br:</strong> Operate on any SEI installation under .br domains, as each agency uses its own subdomain</li>
+</ul>
+
+<h2>7. Contact</h2>
+<p>Questions about this policy may be sent to: <a href="mailto:joaogirota@gmail.com">joaogirota@gmail.com</a></p>
+
+</section>
 
 <footer>
-  SEI+DashCNEN — Extensão para o Sistema Eletrônico de Informações / CNEN
+  SEI+DashCNEN — Chrome Extension for the Electronic Information System / CNEN
 </footer>
 
 </body>
