@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade — SEI+DashCNEN</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+    h1 { color: #1a2e4a; border-bottom: 2px solid #e85d26; padding-bottom: 10px; }
+    h2 { color: #1a2e4a; margin-top: 32px; }
+    a { color: #e85d26; }
+    footer { margin-top: 48px; font-size: 0.85em; color: #888; border-top: 1px solid #eee; padding-top: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Política de Privacidade — SEI+DashCNEN</h1>
+<p><strong>Última atualização:</strong> 04 de maio de 2026</p>
+
+<h2>1. O que é esta extensão</h2>
+<p>
+  SEI+DashCNEN é uma extensão para o navegador Chrome que adiciona um painel de acompanhamento de prazos, estatísticas e equipe ao Sistema Eletrônico de Informações (SEI) utilizado pela Comissão Nacional de Energia Nuclear (CNEN).
+</p>
+
+<h2>2. Dados coletados e armazenados localmente</h2>
+<p>A extensão armazena os seguintes dados <strong>exclusivamente no seu navegador</strong> (via <code>chrome.storage.local</code>), sem transmiti-los a servidores externos:</p>
+<ul>
+  <li>URL base do sistema SEI da sua instituição</li>
+  <li>Preferências de configuração do dashboard (período, filtros, tema)</li>
+  <li>Cache de dados de processos e estatísticas para exibição no painel</li>
+  <li>Estado das notificações e contagem de processos não visualizados</li>
+</ul>
+
+<h2>3. Acesso a páginas do SEI</h2>
+<p>
+  A extensão injeta scripts nas páginas do SEI para ler informações de processos, prazos e equipe diretamente da interface do sistema. Esses dados são utilizados apenas para exibição no painel da extensão e não são enviados a terceiros.
+</p>
+
+<h2>4. Funcionalidade de análise por IA (opcional)</h2>
+<p>
+  Se a funcionalidade de análise por inteligência artificial estiver configurada e habilitada pelo usuário, a extensão poderá enviar conteúdo de documentos de processos SEI para um servidor de análise externo (configurado pelo próprio usuário ou pela instituição). Essa funcionalidade:
+</p>
+<ul>
+  <li>É <strong>desativada por padrão</strong> e requer configuração explícita</li>
+  <li>Envia apenas o conteúdo dos documentos selecionados para análise</li>
+  <li>O endereço do servidor é definido pelo próprio usuário/instituição</li>
+</ul>
+<p>O usuário é responsável por verificar a política de privacidade do servidor de análise configurado.</p>
+
+<h2>5. Dados não coletados</h2>
+<p>Esta extensão <strong>não coleta, transmite nem compartilha</strong>:</p>
+<ul>
+  <li>Dados pessoais de identificação (nome, CPF, e-mail)</li>
+  <li>Credenciais de acesso (usuário ou senha do SEI)</li>
+  <li>Histórico de navegação</li>
+  <li>Dados de telemetria ou uso da extensão</li>
+</ul>
+
+<h2>6. Permissões utilizadas</h2>
+<ul>
+  <li><strong>storage:</strong> Armazenar preferências e cache localmente no navegador</li>
+  <li><strong>notifications:</strong> Exibir alertas de novos processos na unidade</li>
+  <li><strong>alarms:</strong> Agendar verificações periódicas em segundo plano</li>
+  <li><strong>tabs:</strong> Abrir o painel e criar abas temporárias para extração de dados do SEI</li>
+  <li><strong>scripting:</strong> Reinjetar scripts de comunicação após atualização da extensão</li>
+  <li><strong>Host *.br:</strong> Operar em qualquer instalação do SEI em domínios .br, pois cada órgão utiliza seu próprio subdomínio</li>
+</ul>
+
+<h2>7. Contato</h2>
+<p>Dúvidas sobre esta política podem ser enviadas para: <a href="mailto:j.girota@belo.re">j.girota@belo.re</a></p>
+
+<footer>
+  SEI+DashCNEN — Extensão para o Sistema Eletrônico de Informações / CNEN
+</footer>
+
+</body>
+</html>
